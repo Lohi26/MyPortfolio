@@ -1,1 +1,83 @@
+a{
+    color: white;
+}
+#start{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.img-fluid{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 70px;
+    border: 5px solid black;
+}
+#list{
+    font-size: 20px;
+}
+#header{
+    background:linear-gradient(270deg,rgba(128,128,128),rgba(96,96,96),rgba(64,64,64));
+}
+#li:hover{
+   background-color: white;
+   border-radius: 25px;
+   text-align: center;
+   color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    /* background-color: red;  */
+}
 
+.box {
+    width: 1200px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 500px;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: -50%; /* Adjusted to cover entire box */
+    left: -50%; /* Adjusted to cover entire box */
+    width: 200%; /* Adjusted to cover entire box */
+    height: 200%; /* Adjusted to cover entire box */
+    background: repeating-conic-gradient(
+        from var(--a, 0deg), #ff2770 0%, #ff2770 0%, transparent 0%, transparent 60%, #ff2770 70%
+    );
+    animation: rotate1 2s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(var(--a, 0deg)); /* Starting angle */
+    }
+    100% {
+        transform: rotate(calc(var(--a, 0deg) + 360deg)); /* Ending angle */
+    }
+}
+.box::after{
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 98%;
+    left: 5px;
+    top: 5px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
