@@ -1,5 +1,6 @@
 *{
     font-family: cursive;
+    
 }
 #start{
     width: 100px;
@@ -7,10 +8,10 @@
     border-radius: 50%;
 }
 #list{
-    font-size: 20px;
+    font-size: 18px;
 }
 #header{
-    background:linear-gradient(270deg,rgba(128,128,128),rgba(96,96,96),rgba(64,64,64));
+    background-color: #FF6666;
 }
 #li:hover{
    background-color: black;
@@ -22,6 +23,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 90px;
+    
 }
 
 .box {
@@ -35,6 +37,7 @@
     overflow: hidden;
     border-radius: 25px;
     padding: 20px;
+    
 }
 
 .box::before {
@@ -45,7 +48,7 @@
     width: 200%; 
     height: 200%; 
     background: repeating-conic-gradient(
-        from var(--a, 0deg), #ff2770 0%, #ff2770 0%, transparent 0%, transparent 60%, #ff2770 70%
+        from var(--a, 0deg), red 0%, red 0%, transparent 0%, transparent 60%, red 70%
     );
     animation: rotate1 2s linear infinite;
     transform-origin: center;
@@ -72,6 +75,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+    /* background:linear-gradient(270deg,rgba(247,190,169),rgba(239,152,167),rgba(255,160,122)); */
 }
 .about-me{
     font-size: 20px;
@@ -91,4 +95,36 @@
     margin-right: 20px;
     z-index: 20; 
     border: 3px solid black;
+}
+/* Add this CSS to your stylesheet */
+.animated-nav {
+    animation: slideIn 1s forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#list .nav-item {
+    margin-left: 10px; /* Adjust as needed */
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the navbar toggler */
+.navbar-toggler {
+    animation: slideDown 0.5s ease;
 }
