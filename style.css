@@ -1,17 +1,10 @@
-a{
-    color: white;
+*{
+    font-family: cursive;
 }
 #start{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-}
-.img-fluid{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    margin-top: 70px;
-    border: 5px solid black;
 }
 #list{
     font-size: 20px;
@@ -20,39 +13,37 @@ a{
     background:linear-gradient(270deg,rgba(128,128,128),rgba(96,96,96),rgba(64,64,64));
 }
 #li:hover{
-   background-color: white;
+   background-color: black;
    border-radius: 25px;
    text-align: center;
-   color: black;
 }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 83vh;
-    /* background-color: red;  */
+    margin-top: 90px;
 }
 
 .box {
-    width: 1200px;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
     background-color: white;
     border: 1px solid #ccc;
     text-align: center;
-    line-height: 500px;
     box-shadow: 16px 14px 20px #0000008c;
     position: relative;
     overflow: hidden;
     border-radius: 25px;
+    padding: 20px;
 }
 
 .box::before {
     content: "";
     position: absolute;
-    top: -50%; /* Adjusted to cover entire box */
-    left: -50%; /* Adjusted to cover entire box */
-    width: 200%; /* Adjusted to cover entire box */
-    height: 200%; /* Adjusted to cover entire box */
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%; 
     background: repeating-conic-gradient(
         from var(--a, 0deg), #ff2770 0%, #ff2770 0%, transparent 0%, transparent 60%, #ff2770 70%
     );
@@ -80,4 +71,24 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+}
+.about-me{
+    font-size: 20px;
+    position: relative;
+    inset: 2px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    line-height: normal; 
+    margin-top: 20px;
+}
+.profile-img{
+    position: relative;
+    width: 200px;
+    height: auto; 
+    border-radius: 50%;
+    margin-right: 20px;
+    z-index: 20; 
+    border: 3px solid black;
 }
