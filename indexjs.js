@@ -18,3 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
         type();
     });
 });
+document.querySelectorAll('.nav-link').forEach(item => {
+    item.addEventListener('click', () => {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+            navbarToggler.click();
+        }
+    });
+});

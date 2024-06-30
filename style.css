@@ -56,10 +56,10 @@
 
 @keyframes rotate1 {
     0% {
-        transform: rotate(var(--a, 0deg)); /* Starting angle */
+        transform: rotate(var(--a, 0deg));
     }
     100% {
-        transform: rotate(calc(var(--a, 0deg) + 360deg)); /* Ending angle */
+        transform: rotate(calc(var(--a, 0deg) + 360deg));
     }
 }
 .box::after{
@@ -96,7 +96,6 @@
     z-index: 20; 
     border: 3px solid black;
 }
-/* Add this CSS to your stylesheet */
 .animated-nav {
     animation: slideIn 1s forwards;
     opacity: 0;
@@ -113,7 +112,7 @@
     }
 }
 #list .nav-item {
-    margin-left: 10px; /* Adjust as needed */
+    margin-left: 10px;
 }
 @keyframes slideDown {
     0% {
@@ -160,12 +159,12 @@
 }
 @keyframes fadeInOut {
     0% {
-        transform: scale(0.1); /* Normal size */
+        transform: scale(0.1);
     }
     50% {
-        transform: scale(0.1); /* Zoom in */
+        transform: scale(0.1);
     }
     100% {
-        transform: scale(1); /* Back to normal size */
+        transform: scale(1);
     }
 }
