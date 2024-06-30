@@ -168,3 +168,138 @@
         transform: scale(1);
     }
 }
+.tech-1{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: white;
+}
+.img-1{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    margin-left: 50px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.im-1{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.im-2{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.im-3{
+    width: 45px;
+    height: 45px;
+    transform: scale(1.5);
+    margin-left: 41px;
+    margin-top: 20px;
+}
+.im-4{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    transform: scale(1.5);
+}
+#tech-1, #tech-2, #tech-3, #tech-4, #tech-5, #tech-6 {
+    opacity: 0; 
+}
+
+#tech-1 {
+    animation: tech1 1s forwards;
+    animation-delay: 0s; 
+}
+#tech-2 {
+    animation: tech2 1s forwards;
+    animation-delay: 1s; 
+}
+#tech-3 {
+    animation: tech3 1s forwards;
+    animation-delay: 2s; 
+}
+#tech-4 {
+    animation: tech4 1s forwards;
+    animation-delay: 3s; 
+}
+#tech-5 {
+    animation: tech5 1s forwards;
+    animation-delay: 4s; 
+}
+#tech-6 {
+    animation: tech6 1s forwards;
+    animation-delay: 5s; 
+}
+
+@keyframes tech1 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tech2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tech3 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tech4 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tech5 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tech6 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
