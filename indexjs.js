@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const text = content.innerHTML.trim();
         content.innerHTML = '';
         let index = 0;
-        const typingSpeed = 40; // Adjust typing speed here (lower number = faster typing)
+        const typingSpeed = 40;
 
         function type() {
             if (index < text.length) {
-                content.insertAdjacentHTML('beforeend', text.charAt(index)); // Append each character
+                content.insertAdjacentHTML('beforeend', text.charAt(index));
                 index++;
                 setTimeout(type, typingSpeed);
             }
