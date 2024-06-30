@@ -198,7 +198,7 @@
 .im-3{
     width: 45px;
     height: 45px;
-    transform: scale(1.5);
+    /* transform: scale(-1.5); */
     margin-left: 41px;
     margin-top: 20px;
 }
