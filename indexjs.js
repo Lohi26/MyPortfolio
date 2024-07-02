@@ -33,3 +33,6 @@ document.querySelectorAll('.timeline-item').forEach(item => {
         this.classList.toggle('active');
     });
 });
+document.querySelector('.ls').addEventListener('click',function(){
+    
+});
