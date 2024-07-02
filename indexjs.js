@@ -26,3 +26,10 @@ document.querySelectorAll('.nav-link').forEach(item => {
         }
     });
 });
+// Add event listener to each timeline item for click or hover effects
+document.querySelectorAll('.timeline-item').forEach(item => {
+    item.addEventListener('click', function() {
+        // Toggle active class for expanded view or use CSS transitions
+        this.classList.toggle('active');
+    });
+});
