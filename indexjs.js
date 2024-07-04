@@ -7,52 +7,6 @@ document.querySelectorAll('.nav-link').forEach(item => {
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.display-left').forEach(function(element) {
-        const projectCard = element.closest('.project-card');
-        const lsElement = projectCard.querySelector('.ls');
-        const image=projectCard.querySelector('.project-img');
-        let check=projectCard.classList.contains('left-side');
-        element.addEventListener('click', function() {
-            console.log(check);
-            if (check) 
-            {
-                lsElement.classList.remove('left-side');
-                lsElement.classList.add('ls');
-                image.classList.remove('guess-img');
-            } 
-            else 
-            {
-                lsElement.classList.add('left-side');
-                lsElement.classList.remove('ls');
-                image.classList.add('guess-img');
-            }
-            check=check?false:true;
-            console.log("Hello");
-        });
-    });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.display-right').forEach(function(element) {
-        const projectCard = element.closest('.project-card');
-        const lsElement = projectCard.querySelector('.rs');
-        let check=projectCard.classList.contains('right-side');
-        element.addEventListener('click', function() {
-            if (check) 
-            {
-                lsElement.classList.remove('right-side');
-                lsElement.classList.add('rs');
-            } 
-            else 
-            {
-                lsElement.classList.add('right-side');
-                lsElement.classList.remove('rs');
-            }
-            check=check?false:true;
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     const education = document.querySelector('#education-section');
     const educate = document.querySelector('.education');
     const header = document.querySelector('header'); 
@@ -360,162 +314,93 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const projectSection = document.querySelector('#project-scroll');
     const project = document.querySelector('.project');
-    const header = document.querySelector('header'); 
+    const header = document.querySelector('header');
 
     project.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        setTimeout(function() {
-            projectSection.innerHTML = `
-                 <div class="container custom-container3">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12 mb-5">
-                        <div class="project-card box" id="tech-1">
-                            <h4 style="z-index: 20;position: relative;color: white;">Mail Verify Link</h4>
-                            <div class="slide-left">
-                            <div class="display-left">
-                                <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+        e.preventDefault();
+
+        // Check if the project section is already loaded
+        if (!projectSection.classList.contains('loaded')) {
+            // Load content dynamically
+            setTimeout(function() {
+                projectSection.innerHTML = `
+                    <div class="container custom-container3">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                                <div class="project-card box" id="tech-1">
+                                    <h4 style="z-index: 20;position: relative;color: white;">Mail Verify Link</h4>
+                                    <div class="slide-left">
+                                        <div class="display-left">
+                                            <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+                                        </div>
+                                        <div class="ls">
+                                            <p>Technologies Used: SpringBoot, SMTP mail protocol, Maven, MYSQL database</p>
+                                            <p>"Mail Verify Link" - I have wrapped up a Spring Boot project that was meant to make email notifications and form submissions go more smoothly. Users of this application can fill out a form and submit it; the information through PDF is then sent straight to their email addresses. This project highlights my abilities to create dynamic web applications and my skill at fusing several technologies together to provide a smooth user experience.</p>
+                                        </div>
+                                    </div>
+                                    <img src="Photos/maillink.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                    <div class="slide-right" style="z-index: 20;position: relative;">
+                                        <div class="rs">
+                                            <p><a href="https://github.com/Lohi26/MailLink" style="color: black;text-decoration: none;">Source Code</a></p>
+                                            <p><a href="https://angelic-passion-production.up.railway.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                        </div>
+                                        <div class="display-right">
+                                            <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="ls">
-                                <p>Technologies Used:SpringBoot, SMTP mail protocol, Maven, MYSQL database</p>
-                                <p>"Mail Verify Link" - I have wrapped up a Spring Boot project that was meant to make email notifications and form submissions go more smoothly. Users of this application can fill out a form and submit it; the information through PDF is then sent straight to their email addresses. This project highlights my abilities to create dynamic web applications and my skill at fusing several technologies together to provide a smooth user experience.
-                                </p>
-                            </div>
-                            </div>
-                            <img src="Photos/maillink.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-                            <div class="slide-right" style="z-index: 20;position: relative;">
-                            <div class="rs">
-                                <p><a href="https://github.com/Lohi26/MailLink" style="color: black;text-decoration: none;">Source Code</a></p>
-                                <p><a href="https://angelic-passion-production.up.railway.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                            </div>
-                            <div class="display-right">
-                                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mb-5">
-                        <div class="project-card box" id="tech-2">
-                            <h4 style="z-index: 20;position: relative;color: white;">Financical Application</h4>
-                            <div class="slide-left">
-                            <div class="display-left">
-                                <i class="fas fa-laptop-house icon" style="color: white;"></i>
-                            </div>
-                            <div class="ls">
-                                <p>Technologies Used:HTML, CSS and JavaScript</p>
-                                <p>I'm thrilled to announce the completion of my "Bankist" project, crafted using HTML, CSS, and JavaScript. This application, built entirely by me during my journey of learning JavaScript from Udemy with Jonas Schmedtmann, features deposit and withdrawal displays, money transfers, loan requests, account closures, and sorting of transactions. It also showcases total bank balances and includes a session timeout for logging out.</p>
-                            </div>
-                            </div>
-                            <img src="Photos/bankist.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-                            <div class="slide-right" style="z-index: 20;position: relative;">
-                            <div class="rs">
-                                <p><a href="https://github.com/Lohi26/Bankist" style="color: black;text-decoration: none;">Source Code</a></p>
-                                <p><a href="https://bankist-one-roan.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                            </div>
-                            <div class="display-right">
-                                <i class="fas fa-laptop-house icon" style="color: white;"></i>
-                            </div>
-                            </div>
-                        </div>
-                        </div><div class="col-lg-4 col-md-6 col-12 mb-5">
-                        <div class="project-card box" id="tech-3">
-                            <h4 style="z-index: 20;position: relative;color: white;">Digital Resume</h4>
-                            <div class="slide-left">
-                            <div class="display-left">
-                                <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
-                            </div>
-                            <div class="ls">
-                                <p>Technologies Used:HTML, CSS and JavaScript</p>
-                                <p>I have crafted my digital resume using HTML, CSS, and JavaScript. This interactive and visually appealing resume showcases my technical skills, projects, and professional experiences. It features animations, hover effects, and dynamic content to enhance the user experience, demonstrating my web development abilities and attention to detail.</p>
-                            </div>
-                            </div>
-                            <img src="Photos/digital.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-                            <div class="slide-right" style="z-index: 20;position: relative;">
-                            <div class="rs">
-                                <p><a href="https://github.com/Lohi26/My_Resume" style="color: black;text-decoration: none;">Source Code</a></p>
-                                <p><a href="https://my-resume-five-sand.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                            </div>
-                            <div class="display-right">
-                                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mb-5">
-                        <div class="project-card box" id="tech-4">
-                            <h4 style="z-index: 20;position: relative;color: white;">Medical Management</h4>
-                            <div class="slide-left">
-                            <div class="display-left">
-                                <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
-                            </div>
-                            <div class="ls">
-                                <p>Technologies Used:Java, JDBC, MYSQL Driver</p>
-                                <p>I developed a console-based application utilizing Java, JDBC, and MySQL. This application features robust database connectivity and operations, enabling users to perform tasks such as data insertion, retrieval, updating, and deletion through a command-line interface. It demonstrates my proficiency in Java programming, SQL database management, and the implementation of JDBC for seamless interaction between Java applications and MySQL databases.</p>
-                            </div>
-                            </div>
-                            <img src="Photos/medical.jpg" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;height: 190px;z-index: 20;position: relative;">
-                            <div class="slide-right" style="z-index: 20;position: relative;">
-                            <div class="rs">
-                                <p><a href="https://github.com/Lohi26/miniproject/tree/main/717821p231" style="color: black;text-decoration: none;">Source Code</a></p>
-                                <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                            </div>
-                            <div class="display-right">
-                                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mb-5">
-                        <div class="project-card box" id="tech-5">
-                            <h4 style="z-index: 20;position: relative;color: white;">Pig Dice Rolling - Game</h4>
-                            <div class="slide-left">
-                            <div class="display-left">
-                                <i class="fas fa-laptop-house icon i-1"  style="color: white;"></i>
-                            </div>
-                            <div class="ls">
-                                <p>Technologies Used:HTML, CSS and JavaScript</p>
-                                <p>"Pig Dice Rolling" is an interactive web game where two players play a real time dice rolling with certain sort of rules mentinoed.Everything was done using DOM manipulation of JavaScript.</p>
-                            </div>
-                            </div>
-                            <img src="Photos/pig.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-                            <div class="slide-right" style="z-index: 20;position: relative;">
-                            <div class="rs">
-                                <p><a href="https://github.com/Lohi26/Pig_Game" style="color: black;text-decoration: none;">Source Code</a></p>
-                                <p><a href="https://pig-game-sage-chi.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                            </div>
-                            <div class="display-right">
-                                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mb-5">
-                        <div class="project-card box" id="tech-6">
-                            <h4 style="z-index: 20;position: relative;color: white;">Guess My Number - Game</h4>
-                            <div class="slide-left">
-                            <div class="display-left">
-                                <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
-                            </div>
-                            <div class="ls">
-                                <p>Technologies Used:HTML, CSS and JavaScript</p>
-                                <p>"Guess My Number" is an interactive web game where players try to guess a randomly generated number within a specified range. Utilizing HTML for structure, CSS for styling, and JavaScript for game logic, it provides real-time feedback on each guess, guiding players to the correct number.</p>
-                            </div>
-                            </div>
-                            <img src="Photos/Guess.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-                            <div class="slide-right" style="z-index: 20;position: relative;">
-                            <div class="rs">
-                                <p><a href="https://github.com/Lohi26/Guess-My-number" style="color: black;text-decoration: none;">Source Code</a></p>
-                                <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                            </div>
-                            <div class="display-right">
-                                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                            </div>
-                            </div>
-                        </div>
+                            <!-- Additional project cards go here -->
                         </div>
                     </div>
-                </div>
-            `;
-            projectSection.classList.add('loaded');
+                `;
+
+                // Add event listeners for the dynamically loaded content
+                document.querySelectorAll('.display-left').forEach(function(element) {
+                    const projectCard = element.closest('.project-card');
+                    const lsElement = projectCard.querySelector('.ls');
+                    const image = projectCard.querySelector('.project-img');
+                    let check = projectCard.classList.contains('left-side');
+                    element.addEventListener('click', function() {
+                        if (check) {
+                            lsElement.classList.remove('left-side');
+                            lsElement.classList.add('ls');
+                            image.classList.remove('guess-img');
+                        } else {
+                            lsElement.classList.add('left-side');
+                            lsElement.classList.remove('ls');
+                            image.classList.add('guess-img');
+                        }
+                        check = !check;
+                    });
+                });
+                document.querySelectorAll('.display-right').forEach(function(element) {
+                    const projectCard = element.closest('.project-card');
+                    const lsElement = projectCard.querySelector('.rs');
+                    let check = projectCard.classList.contains('right-side');
+                    element.addEventListener('click', function() {
+                        if (check) {
+                            lsElement.classList.remove('right-side');
+                            lsElement.classList.add('rs');
+                        } else {
+                            lsElement.classList.add('right-side');
+                            lsElement.classList.remove('rs');
+                        }
+                        check = !check;
+                    });
+                });
+
+                projectSection.classList.add('loaded');
+                const rect = projectSection.getBoundingClientRect();
+                const offset = rect.top + window.scrollY - header.offsetHeight;
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+                history.pushState(null, null, '#project-scroll');
+            }, 100); // Simulated delay for loading (replace with actual loading logic)
+        } else {
+            // If already loaded, just scroll to the section
             const rect = projectSection.getBoundingClientRect();
             const offset = rect.top + window.scrollY - header.offsetHeight;
             window.scrollTo({
@@ -523,6 +408,225 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
             history.pushState(null, null, '#project-scroll');
-        }, 100); 
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const projectSection = document.querySelector('#project-scroll');
+    const project = document.querySelector('.project');
+    const header = document.querySelector('header');
+
+    project.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Check if the project section is already loaded
+        if (!projectSection.classList.contains('loaded')) {
+            // Load content dynamically
+            setTimeout(function() {
+                projectSection.innerHTML = `
+                    <div class="container custom-container3">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                                <div class="project-card box" id="tech-1">
+                                    <h4 style="z-index: 20;position: relative;color: white;">Mail Verify Link</h4>
+                                    <div class="slide-left">
+                                        <div class="display-left">
+                                            <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+                                        </div>
+                                        <div class="ls">
+                                            <p>Technologies Used: SpringBoot, SMTP mail protocol, Maven, MYSQL database</p>
+                                            <p>"Mail Verify Link" - I have wrapped up a Spring Boot project that was meant to make email notifications and form submissions go more smoothly. Users of this application can fill out a form and submit it; the information through PDF is then sent straight to their email addresses. This project highlights my abilities to create dynamic web applications and my skill at fusing several technologies together to provide a smooth user experience.</p>
+                                        </div>
+                                    </div>
+                                    <img src="Photos/maillink.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                    <div class="slide-right" style="z-index: 20;position: relative;">
+                                        <div class="rs">
+                                            <p><a href="https://github.com/Lohi26/MailLink" style="color: black;text-decoration: none;">Source Code</a></p>
+                                            <p><a href="https://angelic-passion-production.up.railway.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                        </div>
+                                        <div class="display-right">
+                                            <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                                <div class="project-card box" id="tech-2">
+                                    <h4 style="z-index: 20;position: relative;color: white;">Financical Application</h4>
+                                    <div class="slide-left">
+                                    <div class="display-left">
+                                        <i class="fas fa-laptop-house icon" style="color: white;"></i>
+                                    </div>
+                                    <div class="ls">
+                                        <p>Technologies Used:HTML, CSS and JavaScript</p>
+                                        <p>I'm thrilled to announce the completion of my "Bankist" project, crafted using HTML, CSS, and JavaScript. This application, built entirely by me during my journey of learning JavaScript from Udemy with Jonas Schmedtmann, features deposit and withdrawal displays, money transfers, loan requests, account closures, and sorting of transactions. It also showcases total bank balances and includes a session timeout for logging out.</p>
+                                    </div>
+                                    </div>
+                                    <img src="Photos/bankist.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                    <div class="slide-right" style="z-index: 20;position: relative;">
+                                    <div class="rs">
+                                        <p><a href="https://github.com/Lohi26/Bankist" style="color: black;text-decoration: none;">Source Code</a></p>
+                                        <p><a href="https://bankist-one-roan.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                    </div>
+                                    <div class="display-right">
+                                        <i class="fas fa-laptop-house icon" style="color: white;"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                                <div class="project-card box" id="tech-3">
+                                    <h4 style="z-index: 20;position: relative;color: white;">Digital Resume</h4>
+                                    <div class="slide-left">
+                                    <div class="display-left">
+                                        <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+                                    </div>
+                                    <div class="ls">
+                                        <p>Technologies Used:HTML, CSS and JavaScript</p>
+                                        <p>I have crafted my digital resume using HTML, CSS, and JavaScript. This interactive and visually appealing resume showcases my technical skills, projects, and professional experiences. It features animations, hover effects, and dynamic content to enhance the user experience, demonstrating my web development abilities and attention to detail.</p>
+                                    </div>
+                                    </div>
+                                    <img src="Photos/digital.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                    <div class="slide-right" style="z-index: 20;position: relative;">
+                                    <div class="rs">
+                                        <p><a href="https://github.com/Lohi26/My_Resume" style="color: black;text-decoration: none;">Source Code</a></p>
+                                        <p><a href="https://my-resume-five-sand.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                    </div>
+                                    <div class="display-right">
+                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                                <div class="project-card box" id="tech-4">
+                                    <h4 style="z-index: 20;position: relative;color: white;">Medical Management</h4>
+                                    <div class="slide-left">
+                                    <div class="display-left">
+                                        <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+                                    </div>
+                                    <div class="ls">
+                                        <p>Technologies Used:Java, JDBC, MYSQL Driver</p>
+                                        <p>I developed a console-based application utilizing Java, JDBC, and MySQL. This application features robust database connectivity and operations, enabling users to perform tasks such as data insertion, retrieval, updating, and deletion through a command-line interface. It demonstrates my proficiency in Java programming, SQL database management, and the implementation of JDBC for seamless interaction between Java applications and MySQL databases.</p>
+                                    </div>
+                                    </div>
+                                    <img src="Photos/medical.jpg" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;height: 190px;z-index: 20;position: relative;">
+                                    <div class="slide-right" style="z-index: 20;position: relative;">
+                                    <div class="rs">
+                                        <p><a href="https://github.com/Lohi26/miniproject/tree/main/717821p231" style="color: black;text-decoration: none;">Source Code</a></p>
+                                        <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                    </div>
+                                    <div class="display-right">
+                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-5">
+          <div class="project-card box" id="tech-5">
+            <h4 style="z-index: 20;position: relative;color: white;">Pig Dice Rolling - Game</h4>
+            <div class="slide-left">
+              <div class="display-left">
+                <i class="fas fa-laptop-house icon i-1"  style="color: white;"></i>
+              </div>
+              <div class="ls">
+                <p>Technologies Used:HTML, CSS and JavaScript</p>
+                <p>"Pig Dice Rolling" is an interactive web game where two players play a real time dice rolling with certain sort of rules mentinoed.Everything was done using DOM manipulation of JavaScript.</p>
+              </div>
+            </div>
+            <img src="Photos/pig.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+            <div class="slide-right" style="z-index: 20;position: relative;">
+              <div class="rs">
+                <p><a href="https://github.com/Lohi26/Pig_Game" style="color: black;text-decoration: none;">Source Code</a></p>
+                <p><a href="https://pig-game-sage-chi.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+              </div>
+              <div class="display-right">
+                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-5">
+          <div class="project-card box" id="tech-6">
+            <h4 style="z-index: 20;position: relative;color: white;">Guess My Number - Game</h4>
+            <div class="slide-left">
+              <div class="display-left">
+                <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+              </div>
+              <div class="ls">
+                <p>Technologies Used:HTML, CSS and JavaScript</p>
+                <p>"Guess My Number" is an interactive web game where players try to guess a randomly generated number within a specified range. Utilizing HTML for structure, CSS for styling, and JavaScript for game logic, it provides real-time feedback on each guess, guiding players to the correct number.</p>
+              </div>
+            </div>
+            <img src="Photos/Guess.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+            <div class="slide-right" style="z-index: 20;position: relative;">
+              <div class="rs">
+                <p><a href="https://github.com/Lohi26/Guess-My-number" style="color: black;text-decoration: none;">Source Code</a></p>
+                <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+              </div>
+              <div class="display-right">
+                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+                        </div>
+                    </div>
+                `;
+
+                // Add event listeners for the dynamically loaded content
+                document.querySelectorAll('.display-left').forEach(function(element) {
+                    const projectCard = element.closest('.project-card');
+                    const lsElement = projectCard.querySelector('.ls');
+                    const image = projectCard.querySelector('.project-img');
+                    let check = projectCard.classList.contains('left-side');
+                    element.addEventListener('click', function() {
+                        if (check) {
+                            lsElement.classList.remove('left-side');
+                            lsElement.classList.add('ls');
+                            image.classList.remove('guess-img');
+                        } else {
+                            lsElement.classList.add('left-side');
+                            lsElement.classList.remove('ls');
+                            image.classList.add('guess-img');
+                        }
+                        check = !check;
+                    });
+                });
+                document.querySelectorAll('.display-right').forEach(function(element) {
+                    const projectCard = element.closest('.project-card');
+                    const lsElement = projectCard.querySelector('.rs');
+                    let check = projectCard.classList.contains('right-side');
+                    element.addEventListener('click', function() {
+                        if (check) {
+                            lsElement.classList.remove('right-side');
+                            lsElement.classList.add('rs');
+                        } else {
+                            lsElement.classList.add('right-side');
+                            lsElement.classList.remove('rs');
+                        }
+                        check = !check;
+                    });
+                });
+
+                projectSection.classList.add('loaded');
+                const rect = projectSection.getBoundingClientRect();
+                const offset = rect.top + window.scrollY - header.offsetHeight;
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+                history.pushState(null, null, '#project-scroll');
+            }, 100); // Simulated delay for loading (replace with actual loading logic)
+        } else {
+            // If already loaded, just scroll to the section
+            const rect = projectSection.getBoundingClientRect();
+            const offset = rect.top + window.scrollY - header.offsetHeight;
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+            history.pushState(null, null, '#project-scroll');
+        }
     });
 });
