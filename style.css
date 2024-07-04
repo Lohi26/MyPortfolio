@@ -380,56 +380,95 @@
 }
 .project-card{
     text-align: center;
-    background-color: white;
+    background-color: black;
     padding: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 15px;
+    z-index: 20;
+    position: relative;
 }
-.left-side{
+.slide-left{
     text-align: left;
-    padding: 0px;
-    margin-top: 50px;
-    background-color: #FF6666;
-    animation: leftright 1s infinite;
+    z-index: 20;
+    position: relative;
 }
-@keyframes leftright {
-    0% {
-        background: linear-gradient(to right, #ffeb3b, #ffeb3b 50%, transparent 50%, transparent);
-    }
-    100% {
-        background: linear-gradient(to right, transparent, #ffeb3b);
-    }
+.display-left, .display-right{
+    z-index: 20;
+    position: relative;
 }
-
-.left-section {
-    animation: backgroundColorMoveLeftToRight 5s infinite;
-}
-
-.right-section {
-    animation: backgroundColorMoveLeftToRight 5s infinite;
-}
-
-.right-side{
-    padding: 0px;
-    margin-top: 50px;
-    text-align: right;
-    background-color: #FF6666;
-}
-.fas{
-    cursor: pointer;
-}
-.display-left{
-    margin-bottom: 10px;
-    text-align: left;
-}
-.display-right{
-    margin-top: 20px;
+.slide-right{
+    margin-top: 10px;
     text-align: right;
 }
-/* .ls{
-    background-color: #FF6666;
+.ls{
+    display: none;
 }
 .rs{
+    display: none;
+}
+.guess-img{
+    display: none;
+}
+.left-side {
     background-color: #FF6666;
+    padding: 10px;
+    border-radius: 20px;
+    animation: 1s leftright;
+    z-index: 20;
+    position: relative;
+}
+@keyframes leftright{
+    0%{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.right-side{
+    background-color: #FF6666;
+    padding: 10px;
+    border-radius: 20px;
+    animation: 1s rightleft;
+    text-align: center;
+}
+@keyframes rightleft{
+    0%{
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.icon{
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;    
+}
+/* .i-1{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.i-2{
+    margin-top: 5px;
+    margin-bottom: 0px;
 } */
+.project-image {
+    z-index: 20;
+    position: relative;
+    height: 200px; /* Set the desired fixed height */
+    width: 100%; /* Make the image take the full width of its container */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+.project-card::after{
+    left: 2px;
+    top: 4px;
+    background-color: black;
+}
