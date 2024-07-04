@@ -162,10 +162,10 @@
 }
 @keyframes fadeInOut {
     0% {
-        transform: scale(0.1);
+        transform: scale(0);
     }
     50% {
-        transform: scale(0.1);
+        transform: scale(0);
     }
     100% {
         transform: scale(1);
@@ -411,7 +411,7 @@
     display: none;
 }
 .left-side {
-    background-color: #FF6666;
+    background-color: white;
     padding: 10px;
     border-radius: 20px;
     animation: 1s leftright;
@@ -429,7 +429,7 @@
     }
 }
 .right-side{
-    background-color: #FF6666;
+    background-color: white;
     padding: 10px;
     border-radius: 20px;
     animation: 1s rightleft;
