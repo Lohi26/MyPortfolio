@@ -330,6 +330,7 @@
 .certification-grid {
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 16px 14px 20px #0000008c;
     gap: 20px;
     z-index: 20;
 }
@@ -348,13 +349,14 @@
 
 .certification-front {
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 16px 14px 20px #0000008c;
     padding: 20px;
     text-align: center;
 }
 
 .certification-back {
     background-color: white;
+    box-shadow: 16px 14px 20px #0000008c;
     transform: rotateY(180deg);
     padding: 20px;
     text-align: center;
