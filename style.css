@@ -479,7 +479,7 @@
     background-color: white;
 }
 .custom-container4 {
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 .leet, .git, .linked, .code, .resume {
@@ -495,8 +495,8 @@
 .leetcode, .linkedin, .code, .resume {
     display: none;
 }
-
-/* Ensure the .leetcode class is visible when needed */
-.reference-3 .leetcode {
-    display: block !important;
+#footer-section{
+    background-color: #CCFFFF;
+    margin-top: 100px;
+    border: 10px solid #66FFFF;
 }

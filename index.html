@@ -6,14 +6,17 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 </head>
 <body>  
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="header">
             <a class="navbar-brand" href="#">
-                <img src="Photos/port.jpeg" alt="Brand Image" id="start">
+                <img src="Photos/mine.png" alt="Brand Image" id="start">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -38,7 +41,7 @@
                 <li class="nav-item me-3 ref" id="li">
                     <a class="nav-link" href="#" style="color: black;"><i class="fas fa-users" style="color: black;"></i>  Reference</a>
                 </li>
-                <li class="nav-item me-3" id="li">
+                <li class="nav-item me-3 contact" id="li">
                     <a class="nav-link" href="#" style="color: black;"><i class="fas fa-envelope" style="color: black;"></i>  Contact</a>
                 </li>
               </ul>
@@ -203,12 +206,12 @@
               <div class="certification-card" style="z-index: 20;">
                 <div class="certification-front">
                   <img src="Photos/udemy.png" alt="Certification Logo" style="width: 50px;height: 50px;">
-                  <p style="font-weight: bolder;">The Complete JavaScript Course</p>
+                  <p style="font-weight: bolder;">Complete JavaScript</p>
                   <p>UDEMY</p>
                   <p>April 2024</p>
                 </div>
                 <div class="certification-back">
-                  <p>Advanced Knowledge in JavaScript and hands on projects</p>
+                  <p>Advanced Knowledge in JS and hands on projects</p>
                   <p>Skills gained: DS and Web development using JS</p>
                   <a href="https://github.com/Lohi26/Certifications/blob/main/The%20Complete%20JavaScript%20Course.pdf" target="_blank">View Here</a>
                 </div>
@@ -241,13 +244,13 @@
               <div class="certification-card" style="z-index: 20;">
                 <div class="certification-front">
                   <img src="Photos/workshop.png" alt="Certification Logo" style="width: 50px;height: 50px;">
-                  <p style="font-weight: bolder;">Data Science WorkShop IIT Chennai </p>
+                  <p style="font-weight: bolder;">Data Science - IIT Chennai </p>
                   <p>Data Science</p>
                   <p>Feb 2024</p>
                 </div>
                 <div class="certification-back">
                   <p>Basic Knowledge in Data Science</p>
-                  <p>Skills gained: Data Science and python</p>
+                  <p>Skills gained: Data Science</p>
                   <a href="cert-link.pdf" target="_blank">View Here</a>
                 </div>
               </div>
@@ -346,7 +349,7 @@
                 <p>I developed a console-based application utilizing Java, JDBC, and MySQL. This application features robust database connectivity and operations, enabling users to perform tasks such as data insertion, retrieval, updating, and deletion through a command-line interface. It demonstrates my proficiency in Java programming, SQL database management, and the implementation of JDBC for seamless interaction between Java applications and MySQL databases.</p>
               </div>
             </div>
-            <img src="Photos/medical.jpg" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;height: 190px;z-index: 20;position: relative;">
+            <img src="Photos/medical.jpg" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;height: 155px;z-index: 20;position: relative;">
             <div class="slide-right" style="z-index: 20;position: relative;">
               <div class="rs">
                 <p><a href="https://github.com/Lohi26/miniproject/tree/main/717821p231" style="color: black;text-decoration: none;">Source Code</a></p>
@@ -439,7 +442,74 @@
       </div>
       <h3 style="padding: 10px;cursor: pointer;" class="end">&gt;</h3>
     </div>
-  </section>  
+  </section> 
+  <section id="footer-section">
+    <div class="container" style="background-color: #CCFFFF;">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mb-5">
+          <h3>Contact Me</h3>
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+              <li>
+                <a href="#" class="home">Home</a>
+              </li>
+              <li>
+                <a href="https://my-resume-five-sand.vercel.app/">Digital Resume</a>
+              </li>
+              <li>
+                <a href="https://wa.me/1234567890" target="_blank">Contact</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5">
+          <h3>Follow Me On</h3>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter" style="color: black;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="www.linkedin.com/in/lohitacp">
+                <i class="fab fa-linkedin" style="color: black;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Lohi26">
+                <i class="fab fa-github" style="color: black;"></i>
+              </a>
+            </li>
+          </ul>        
+          <h3>Resume</h3>
+          <p><a href="https://drive.google.com/file/d/19JoikztLnRqRiZ2atXnczOw5xOSe_bL1/view?usp=drive_link">Download Resume</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 0px;">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p>&copy; 2024 Lohita<i class="fas fa-heart" style="color: red;"></i>. A Professional portfolio.</p>
+          </div>
+      </div>
+    </div>
+  </section>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>

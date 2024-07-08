@@ -463,34 +463,35 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-12 mb-5">
                                 <div class="project-card box" id="tech-1">
-                                    <h4 style="z-index: 20;position: relative;color: white;">Mail Verify Link</h4>
+                                    <h4 style="z-index: 20;position: relative;color: black;">Mail Verify Link</h4>
                                     <div class="slide-left">
-                                        <div class="display-left">
-                                            <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
-                                        </div>
-                                        <div class="ls">
-                                            <p>Technologies Used: SpringBoot, SMTP mail protocol, Maven, MYSQL database</p>
-                                            <p>"Mail Verify Link" - I have wrapped up a Spring Boot project that was meant to make email notifications and form submissions go more smoothly. Users of this application can fill out a form and submit it; the information through PDF is then sent straight to their email addresses. This project highlights my abilities to create dynamic web applications and my skill at fusing several technologies together to provide a smooth user experience.</p>
-                                        </div>
+                                    <div class="display-left">
+                                        <i class="fas fa-laptop-house icon i-1" style="color: black;"></i>
+                                    </div>
+                                    <div class="ls">
+                                        <p>Technologies Used:SpringBoot, SMTP mail protocol, Maven, MYSQL database</p>
+                                        <p>"Mail Verify Link" - I have wrapped up a Spring Boot project that was meant to make email notifications and form submissions go more smoothly. Users of this application can fill out a form and submit it; the information through PDF is then sent straight to their email addresses. This project highlights my abilities to create dynamic web applications and my skill at fusing several technologies together to provide a smooth user experience.
+                                        </p>
+                                    </div>
                                     </div>
                                     <img src="Photos/maillink.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
                                     <div class="slide-right" style="z-index: 20;position: relative;">
-                                        <div class="rs">
-                                            <p><a href="https://github.com/Lohi26/MailLink" style="color: black;text-decoration: none;">Source Code</a></p>
-                                            <p><a href="https://angelic-passion-production.up.railway.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                                        </div>
-                                        <div class="display-right">
-                                            <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                                        </div>
+                                    <div class="rs">
+                                        <p><a href="https://github.com/Lohi26/MailLink" style="color: black;text-decoration: none;">Source Code</a></p>
+                                        <p><a href="https://angelic-passion-production.up.railway.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                    </div>
+                                    <div class="display-right">
+                                        <i class="fas fa-laptop-house icon i-2" style="color: black;"></i>
                                     </div>
                                 </div>
                             </div>
+                            </div>
                             <div class="col-lg-4 col-md-6 col-12 mb-5">
                                 <div class="project-card box" id="tech-2">
-                                    <h4 style="z-index: 20;position: relative;color: white;">Financical Application</h4>
+                                    <h4 style="z-index: 20;position: relative;color: black;">Financical Application</h4>
                                     <div class="slide-left">
                                     <div class="display-left">
-                                        <i class="fas fa-laptop-house icon" style="color: white;"></i>
+                                        <i class="fas fa-laptop-house icon" style="color: black;"></i>
                                     </div>
                                     <div class="ls">
                                         <p>Technologies Used:HTML, CSS and JavaScript</p>
@@ -504,17 +505,17 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <p><a href="https://bankist-one-roan.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
                                     </div>
                                     <div class="display-right">
-                                        <i class="fas fa-laptop-house icon" style="color: white;"></i>
-                                    </div>
+                                        <i class="fas fa-laptop-house icon" style="color: black;"></i>
                                     </div>
                                 </div>
                             </div>
+                            </div>
                             <div class="col-lg-4 col-md-6 col-12 mb-5">
                                 <div class="project-card box" id="tech-3">
-                                    <h4 style="z-index: 20;position: relative;color: white;">Digital Resume</h4>
+                                    <h4 style="z-index: 20;position: relative;color: black;">Digital Resume</h4>
                                     <div class="slide-left">
                                     <div class="display-left">
-                                        <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+                                        <i class="fas fa-laptop-house icon i-1" style="color: black;"></i>
                                     </div>
                                     <div class="ls">
                                         <p>Technologies Used:HTML, CSS and JavaScript</p>
@@ -528,80 +529,80 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <p><a href="https://my-resume-five-sand.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
                                     </div>
                                     <div class="display-right">
-                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                                    </div>
+                                        <i class="fas fa-laptop-house icon i-2" style="color: black;"></i>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-12 mb-5">
                                 <div class="project-card box" id="tech-4">
-                                    <h4 style="z-index: 20;position: relative;color: white;">Medical Management</h4>
-                                    <div class="slide-left">
-                                    <div class="display-left">
-                                        <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
-                                    </div>
-                                    <div class="ls">
-                                        <p>Technologies Used:Java, JDBC, MYSQL Driver</p>
-                                        <p>I developed a console-based application utilizing Java, JDBC, and MySQL. This application features robust database connectivity and operations, enabling users to perform tasks such as data insertion, retrieval, updating, and deletion through a command-line interface. It demonstrates my proficiency in Java programming, SQL database management, and the implementation of JDBC for seamless interaction between Java applications and MySQL databases.</p>
-                                    </div>
-                                    </div>
-                                    <img src="Photos/medical.jpg" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;height: 190px;z-index: 20;position: relative;">
-                                    <div class="slide-right" style="z-index: 20;position: relative;">
-                                    <div class="rs">
-                                        <p><a href="https://github.com/Lohi26/miniproject/tree/main/717821p231" style="color: black;text-decoration: none;">Source Code</a></p>
-                                        <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                                    </div>
-                                    <div class="display-right">
-                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                                    </div>
-                                    </div>
+                                <h4 style="z-index: 20;position: relative;color: black;">Medical Management</h4>
+                                <div class="slide-left">
+                                <div class="display-left">
+                                    <i class="fas fa-laptop-house icon i-1" style="color: black;"></i>
+                                </div>
+                                <div class="ls">
+                                    <p>Technologies Used:Java, JDBC, MYSQL Driver</p>
+                                    <p>I developed a console-based application utilizing Java, JDBC, and MySQL. This application features robust database connectivity and operations, enabling users to perform tasks such as data insertion, retrieval, updating, and deletion through a command-line interface. It demonstrates my proficiency in Java programming, SQL database management, and the implementation of JDBC for seamless interaction between Java applications and MySQL databases.</p>
+                                </div>
+                                </div>
+                                <img src="Photos/medical.jpg" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;height: 155px;z-index: 20;position: relative;">
+                                <div class="slide-right" style="z-index: 20;position: relative;">
+                                <div class="rs">
+                                    <p><a href="https://github.com/Lohi26/miniproject/tree/main/717821p231" style="color: black;text-decoration: none;">Source Code</a></p>
+                                    <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                </div>
+                                <div class="display-right">
+                                    <i class="fas fa-laptop-house icon i-2" style="color: black;"></i>
+                                </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12 mb-5">
-                                <div class="project-card box" id="tech-5">
-                                    <h4 style="z-index: 20;position: relative;color: white;">Pig Dice Rolling - Game</h4>
-                                    <div class="slide-left">
-                                    <div class="display-left">
-                                        <i class="fas fa-laptop-house icon i-1"  style="color: white;"></i>
-                                    </div>
-                                    <div class="ls">
-                                        <p>Technologies Used:HTML, CSS and JavaScript</p>
-                                        <p>"Pig Dice Rolling" is an interactive web game where two players play a real time dice rolling with certain sort of rules mentinoed.Everything was done using DOM manipulation of JavaScript.</p>
-                                    </div>
-                                    </div>
-                                    <img src="Photos/pig.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-                                    <div class="slide-right" style="z-index: 20;position: relative;">
-                                    <div class="rs">
-                                        <p><a href="https://github.com/Lohi26/Pig_Game" style="color: black;text-decoration: none;">Source Code</a></p>
-                                        <p><a href="https://pig-game-sage-chi.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                                    </div>
-                                    <div class="display-right">
-                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                                    </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-12 mb-5">
-                                <div class="project-card box" id="tech-6">
-                                    <h4 style="z-index: 20;position: relative;color: white;">Guess My Number - Game</h4>
-                                    <div class="slide-left">
-                                    <div class="display-left">
-                                        <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
-                                    </div>
-                                    <div class="ls">
-                                        <p>Technologies Used:HTML, CSS and JavaScript</p>
-                                        <p>"Guess My Number" is an interactive web game where players try to guess a randomly generated number within a specified range. Utilizing HTML for structure, CSS for styling, and JavaScript for game logic, it provides real-time feedback on each guess, guiding players to the correct number.</p>
-                                    </div>
-                                    </div>
-                                    <img src="Photos/Guess.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-                                    <div class="slide-right" style="z-index: 20;position: relative;">
-                                    <div class="rs">
-                                        <p><a href="https://github.com/Lohi26/Guess-My-number" style="color: black;text-decoration: none;">Source Code</a></p>
-                                        <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-                                    </div>
-                                    <div class="display-right">
-                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-                                    </div>
+                            <div class="project-card box" id="tech-5">
+                                <h4 style="z-index: 20;position: relative;color: black;">Pig Dice Rolling - Game</h4>
+                                <div class="slide-left">
+                                <div class="display-left">
+                                    <i class="fas fa-laptop-house icon i-1"  style="color: black;"></i>
+                                </div>
+                                <div class="ls">
+                                    <p>Technologies Used:HTML, CSS and JavaScript</p>
+                                    <p>"Pig Dice Rolling" is an interactive web game where two players play a real time dice rolling with certain sort of rules mentinoed.Everything was done using DOM manipulation of JavaScript.</p>
+                                </div>
+                                </div>
+                                <img src="Photos/pig.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                <div class="slide-right" style="z-index: 20;position: relative;">
+                                <div class="rs">
+                                    <p><a href="https://github.com/Lohi26/Pig_Game" style="color: black;text-decoration: none;">Source Code</a></p>
+                                    <p><a href="https://pig-game-sage-chi.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                </div>
+                                <div class="display-right">
+                                    <i class="fas fa-laptop-house icon i-2" style="color: black;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                            <div class="project-card box" id="tech-6">
+                                <h4 style="z-index: 20;position: relative;color: black;">Guess My Number - Game</h4>
+                                <div class="slide-left">
+                                <div class="display-left">
+                                    <i class="fas fa-laptop-house icon i-1" style="color: black;"></i>
+                                </div>
+                                <div class="ls">
+                                    <p>Technologies Used:HTML, CSS and JavaScript</p>
+                                    <p>"Guess My Number" is an interactive web game where players try to guess a randomly generated number within a specified range. Utilizing HTML for structure, CSS for styling, and JavaScript for game logic, it provides real-time feedback on each guess, guiding players to the correct number.</p>
+                                </div>
+                                </div>
+                                <img src="Photos/Guess.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                <div class="slide-right" style="z-index: 20;position: relative;">
+                                <div class="rs">
+                                    <p><a href="https://github.com/Lohi26/Guess-My-number" style="color: black;text-decoration: none;">Source Code</a></p>
+                                    <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                </div>
+                                <div class="display-right">
+                                    <i class="fas fa-laptop-house icon i-2" style="color: black;"></i>
+                                </div>
                                 </div>
                             </div>
                             </div>
@@ -676,25 +677,25 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             referenceSection.innerHTML = `
                 <div class="container custom-container4">
-                    <h3 id="start">&lt;</h3>
+                    <h3 style="padding: 10px;cursor: pointer;" class="begin">&lt;</h3>
                     <div class="reference-1">
-                        <a href="www.linkedin.com/in/lohitacp">
-                        <img src="Photos/linkedin.jpg" class="img-fluid linked" alt="LinkedIn">
+                        <a href="www.linkedin.com/in/lohitacp" class="link">
+                        <img src="Photos/linkedin.jpg" class="img-fluid linked linkedin" alt="LinkedIn">
                         </a>
                     </div>
                     <div class="reference-2">
-                        <a href="https://leetcode.com/u/lohita26/">
-                        <img src="Photos/leetcode.jpg" class="img-fluid leet" alt="Leetcode">
+                        <a href="https://leetcode.com/u/lohita26/" class="code">
+                        <img src="Photos/leetcode.jpg" class="img-fluid leet leetcode" alt="Leetcode">
                         </a>
                     </div>
                     <div class="reference-3">
                         <a href="https://github.com/Lohi26">
-                        <img src="Photos/github.webp" class="img-fluid git" alt="GitHub">
+                        <img src="Photos/github.webp" class="img-fluid git github" alt="GitHub">
                         </a>
                     </div>
                     <div class="reference-4">
                         <a href="https://www.codechef.com/users/kce717821p231">
-                        <img src="Photos/codechef.png" class="img-fluid code" alt="CodeChef">
+                        <img src="Photos/codechef.png" class="img-fluid code codechef" alt="CodeChef">
                         </a>
                     </div>
                     <div class="reference-5">
@@ -702,9 +703,121 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img src="Photos/resume.jpg" alt="Resume" class="img-fluid resume">
                         </a>
                     </div>
-                    <h3 id="end">&gt;</h3>
+                    <h3 style="padding: 10px;cursor: pointer;" class="end">&gt;</h3>
                 </div>
             `;
+            const start = document.querySelector('.begin');
+            const end = document.querySelector('.end');
+            const ref3 = document.querySelector('.reference-3');
+            let showingLinkedIn = false;
+            let showingGithub = false;
+            let showingLeetcode = false;
+            let showingCodechef = false;
+            let showingResume = false;
+        
+            start.addEventListener('click', function() {
+                if (showingGithub) {
+                    if(showingLeetcode==false)
+                    {
+                        ref3.innerHTML = `
+                        <a href="https://leetcode.com/u/lohita26/">
+                            <img src="Photos/leetcode.jpg" class="img-fluid leet leetcode" alt="Leetcode">
+                        </a>`;
+                        ref3.querySelector('.leetcode').style.display = 'block';
+                        showingGithub = false;
+                        showingLeetcode = true;
+                    }
+                    else
+                    {
+                        ref3.innerHTML = `
+                        <a href="https://www.codechef.com/users/kce717821p231">
+                            <img src="Photos/codechef.png" class="img-fluid code codechef" alt="CodeChef">
+                        </a>`;
+                        ref3.querySelector('.codechef').style.display = 'block';
+                        showingGithub = false;
+                        showingCodechef = true;
+                    }
+                }  else if(showingLinkedIn && showingResume==false)
+                {
+                    console.log("Hello");
+                }
+                else if (showingCodechef) {
+                    ref3.innerHTML = `
+                    <a href="https://github.com/Lohi26">
+                        <img src="Photos/github.webp" class="img-fluid git github" alt="GitHub">
+                    </a>`;
+                    ref3.querySelector('.github').style.display = 'block';
+                    showingCodechef = false;
+                    showingGithub = true;
+                } else if (showingLeetcode) {
+                    ref3.innerHTML = `
+                        <a href="https://www.linkedin.com/in/lohitacp">
+                            <img src="Photos/linkedin.jpg" class="img-fluid linked linkedin" alt="LinkedIn">
+                        </a>`;
+                    ref3.querySelector('.linkedin').style.display = 'block';
+                    showingLeetcode = false;
+                    showingLinkedIn = true;
+                }
+                else if(showingResume){
+                    ref3.innerHTML = `
+                        <a href="https://www.codechef.com/users/kce717821p231">
+                            <img src="Photos/codechef.png" class="img-fluid code codechef" alt="CodeChef">
+                        </a>`;
+                    ref3.querySelector('.codechef').style.display = 'block';
+                    showingResume=false;
+                    showingCodechef=true;
+                } 
+                else {
+                    ref3.innerHTML = `
+                        <a href="https://leetcode.com/u/lohita26/">
+                            <img src="Photos/leetcode.jpg" class="img-fluid leet leetcode" alt="Leetcode">
+                        </a>`;
+                    ref3.querySelector('.leetcode').style.display = 'block';
+                    showingLinkedIn = false;
+                    showingLeetcode = true;
+                }
+            });
+        
+            end.addEventListener('click', function() {
+                if (showingResume) {
+                    console.log("Hello");
+                } else if (showingCodechef) {
+                    ref3.innerHTML = `
+                        <a href="https://my-resume-five-sand.vercel.app/">
+                            <img src="Photos/resume.jpg" alt="Resume" class="img-fluid resume">
+                        </a>`;
+                    ref3.querySelector('.resume').style.display = 'block';
+                    showingCodechef = false;
+                    showingResume = true;
+                } else if (showingLinkedIn) {
+                    ref3.innerHTML = `
+                        <a href="https://leetcode.com/u/lohita26/">
+                            <img src="Photos/leetcode.jpg" class="img-fluid leet leetcode" alt="Leetcode">
+                        </a>`;
+                    ref3.querySelector('.leetcode').style.display = 'block';
+                    showingLinkedIn = false;
+                    showingLeetcode = true;
+                }
+                else if(showingGithub)
+                {
+                    ref3.innerHTML = `
+                    <a href="https://www.codechef.com/users/kce717821p231">
+                        <img src="Photos/codechef.png" class="img-fluid code codechef" alt="CodeChef">
+                    </a>`;
+                    ref3.querySelector('.codechef').style.display = 'block';
+                    showingGithub = false;
+                    showingCodechef = true;
+                } 
+                else {
+                    ref3.innerHTML = `
+                        <a href="https://github.com/Lohi26">
+                            <img src="Photos/github.webp" class="img-fluid git github" alt="GitHub">
+                        </a>`;
+                    ref3.querySelector('.github').style.display = 'block';
+                    showingLeetcode = false;
+                    showingGithub = true;
+                }
+            });
             referenceSection.classList.add('loaded');
             const rect = referenceSection.getBoundingClientRect();
             const offset = rect.top + window.scrollY - header.offsetHeight;
@@ -748,7 +861,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 showingGithub = false;
                 showingCodechef = true;
             }
-        } else if (showingCodechef) {
+        }  else if(showingLinkedIn && showingResume==false)
+        {
+            console.log("Hello");
+        }
+        else if (showingCodechef) {
             ref3.innerHTML = `
             <a href="https://github.com/Lohi26">
                 <img src="Photos/github.webp" class="img-fluid git github" alt="GitHub">
@@ -824,5 +941,91 @@ document.addEventListener('DOMContentLoaded', function() {
             showingLeetcode = false;
             showingGithub = true;
         }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const footerSection = document.querySelector('#footer-section');
+    const footer = document.querySelector('.contact');
+    const header = document.querySelector('header'); 
+
+    footer.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        setTimeout(function() {
+            footerSection.innerHTML = `
+                 <div class="container" style="background-color: #CCFFFF;">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mb-5">
+          <h3>Contact Me</h3>
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+              <li>
+                <a href="#" class="home">Home</a>
+              </li>
+              <li>
+                <a href="https://my-resume-five-sand.vercel.app/">Digital Resume</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5">
+          <h3>Follow Me On</h3>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter" style="color: black;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="www.linkedin.com/in/lohitacp">
+                <i class="fab fa-linkedin" style="color: black;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Lohi26">
+                <i class="fab fa-github" style="color: black;"></i>
+              </a>
+            </li>
+          </ul>        
+          <h3>Resume</h3>
+          <p><a href="https://drive.google.com/file/d/19JoikztLnRqRiZ2atXnczOw5xOSe_bL1/view?usp=drive_link">Download Resume</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 0px;">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p>&copy; 2024 Your Name. All rights reserved.</p>
+          </div>
+      </div>
+    </div>
+            `;
+            footerSection.classList.add('loaded');
+            const rect = footerSection.getBoundingClientRect();
+            const offset = rect.top + window.scrollY - header.offsetHeight;
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+            history.pushState(null, null, '#footer-section');
+        }, 100); 
     });
 });
