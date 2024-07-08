@@ -11,10 +11,10 @@
     font-size: 18px;
 }
 #header{
-    background-color: #FF6666;
+    background-color: #CCFFFF;
 }
 #li:hover{
-   background-color: black;
+   background-color: white;
    border-radius: 25px;
    text-align: center;
 }
@@ -220,6 +220,8 @@
 }
 #tech-1, #tech-2, #tech-3, #tech-4, #tech-5, #tech-6 {
     opacity: 0; 
+    border: 2px solid black;
+    box-shadow: 16px 14px 20px #0000008c;
 }
 
 #tech-1 {
@@ -316,13 +318,14 @@
     margin-top: 200px;
 }
 .certifications-section {
+    border: 2px solid black;
     padding: 50px;
-    background-color: black;
+    background-color: white;
     z-index: 20;
 }
 .certifications-section::after{
     left: 2px;
-    background-color: black;
+    background-color: white;
 }
 .certification-grid {
     display: flex;
@@ -383,7 +386,7 @@
 }
 .project-card{
     text-align: center;
-    background-color: black;
+    background-color: white;
     padding: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -414,7 +417,7 @@
     display: none;
 }
 .left-side {
-    background-color: white;
+    background-color: #CCFFFF;
     padding: 10px;
     border-radius: 20px;
     animation: 1s leftright;
@@ -432,7 +435,7 @@
     }
 }
 .right-side{
-    background-color: white;
+    background-color: #CCFFFF;
     padding: 10px;
     border-radius: 20px;
     animation: 1s rightleft;
@@ -449,7 +452,7 @@
     }
 }
 .icon{
-    color: black;
+    color: white;
     border: 2px solid black;
     border-radius: 50%;
     padding: 10px;
@@ -473,19 +476,27 @@
 .project-card::after{
     left: 2px;
     top: 4px;
-    background-color: black;
+    background-color: white;
 }
-.custom-container4{
+.custom-container4 {
     margin-top: 200px;
 }
-.leet, .git, .linked, .code, .resume{
+
+.leet, .git, .linked, .code, .resume {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-.code{
+
+.code {
     border-radius: 5000px;
 }
-/* .leet, .linked, .code, .resume{
+
+.leetcode, .linkedin, .code, .resume {
     display: none;
-} */
+}
+
+/* Ensure the .leetcode class is visible when needed */
+.reference-3 .leetcode {
+    display: block !important;
+}

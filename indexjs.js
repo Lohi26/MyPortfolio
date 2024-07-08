@@ -6,6 +6,41 @@ document.querySelectorAll('.nav-link').forEach(item => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.display-left').forEach(function(element) {
+        const projectCard = element.closest('.project-card');
+        const lsElement = projectCard.querySelector('.ls');
+        const image = projectCard.querySelector('.project-img');
+        let check = projectCard.classList.contains('left-side');
+        element.addEventListener('click', function() {
+            if (check) {
+                lsElement.classList.remove('left-side');
+                lsElement.classList.add('ls');
+                image.classList.remove('guess-img');
+            } else {
+                lsElement.classList.add('left-side');
+                lsElement.classList.remove('ls');
+                image.classList.add('guess-img');
+            }
+            check = !check;
+        });
+    });
+    document.querySelectorAll('.display-right').forEach(function(element) {
+        const projectCard = element.closest('.project-card');
+        const lsElement = projectCard.querySelector('.rs');
+        let check = projectCard.classList.contains('right-side');
+        element.addEventListener('click', function() {
+            if (check) {
+                lsElement.classList.remove('right-side');
+                lsElement.classList.add('rs');
+            } else {
+                lsElement.classList.add('right-side');
+                lsElement.classList.remove('rs');
+            }
+            check = !check;
+        });
+    });
+})
 document.addEventListener('DOMContentLoaded', function() {
     const education = document.querySelector('#education-section');
     const educate = document.querySelector('.education');
@@ -522,54 +557,54 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </div>
                                 </div>
                             </div>
-        <div class="col-lg-4 col-md-6 col-12 mb-5">
-          <div class="project-card box" id="tech-5">
-            <h4 style="z-index: 20;position: relative;color: white;">Pig Dice Rolling - Game</h4>
-            <div class="slide-left">
-              <div class="display-left">
-                <i class="fas fa-laptop-house icon i-1"  style="color: white;"></i>
-              </div>
-              <div class="ls">
-                <p>Technologies Used:HTML, CSS and JavaScript</p>
-                <p>"Pig Dice Rolling" is an interactive web game where two players play a real time dice rolling with certain sort of rules mentinoed.Everything was done using DOM manipulation of JavaScript.</p>
-              </div>
-            </div>
-            <img src="Photos/pig.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-            <div class="slide-right" style="z-index: 20;position: relative;">
-              <div class="rs">
-                <p><a href="https://github.com/Lohi26/Pig_Game" style="color: black;text-decoration: none;">Source Code</a></p>
-                <p><a href="https://pig-game-sage-chi.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-              </div>
-              <div class="display-right">
-                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 mb-5">
-          <div class="project-card box" id="tech-6">
-            <h4 style="z-index: 20;position: relative;color: white;">Guess My Number - Game</h4>
-            <div class="slide-left">
-              <div class="display-left">
-                <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
-              </div>
-              <div class="ls">
-                <p>Technologies Used:HTML, CSS and JavaScript</p>
-                <p>"Guess My Number" is an interactive web game where players try to guess a randomly generated number within a specified range. Utilizing HTML for structure, CSS for styling, and JavaScript for game logic, it provides real-time feedback on each guess, guiding players to the correct number.</p>
-              </div>
-            </div>
-            <img src="Photos/Guess.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
-            <div class="slide-right" style="z-index: 20;position: relative;">
-              <div class="rs">
-                <p><a href="https://github.com/Lohi26/Guess-My-number" style="color: black;text-decoration: none;">Source Code</a></p>
-                <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
-              </div>
-              <div class="display-right">
-                <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                                <div class="project-card box" id="tech-5">
+                                    <h4 style="z-index: 20;position: relative;color: white;">Pig Dice Rolling - Game</h4>
+                                    <div class="slide-left">
+                                    <div class="display-left">
+                                        <i class="fas fa-laptop-house icon i-1"  style="color: white;"></i>
+                                    </div>
+                                    <div class="ls">
+                                        <p>Technologies Used:HTML, CSS and JavaScript</p>
+                                        <p>"Pig Dice Rolling" is an interactive web game where two players play a real time dice rolling with certain sort of rules mentinoed.Everything was done using DOM manipulation of JavaScript.</p>
+                                    </div>
+                                    </div>
+                                    <img src="Photos/pig.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                    <div class="slide-right" style="z-index: 20;position: relative;">
+                                    <div class="rs">
+                                        <p><a href="https://github.com/Lohi26/Pig_Game" style="color: black;text-decoration: none;">Source Code</a></p>
+                                        <p><a href="https://pig-game-sage-chi.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                    </div>
+                                    <div class="display-right">
+                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                                <div class="project-card box" id="tech-6">
+                                    <h4 style="z-index: 20;position: relative;color: white;">Guess My Number - Game</h4>
+                                    <div class="slide-left">
+                                    <div class="display-left">
+                                        <i class="fas fa-laptop-house icon i-1" style="color: white;"></i>
+                                    </div>
+                                    <div class="ls">
+                                        <p>Technologies Used:HTML, CSS and JavaScript</p>
+                                        <p>"Guess My Number" is an interactive web game where players try to guess a randomly generated number within a specified range. Utilizing HTML for structure, CSS for styling, and JavaScript for game logic, it provides real-time feedback on each guess, guiding players to the correct number.</p>
+                                    </div>
+                                    </div>
+                                    <img src="Photos/Guess.png" class="img-fluid project-img" style="margin-top: 10px;margin-bottom: 10px;z-index: 20;position: relative;">
+                                    <div class="slide-right" style="z-index: 20;position: relative;">
+                                    <div class="rs">
+                                        <p><a href="https://github.com/Lohi26/Guess-My-number" style="color: black;text-decoration: none;">Source Code</a></p>
+                                        <p><a href="https://guess-my-number-gamma-lake.vercel.app/" style="color: black;text-decoration: none;">Website Link</a></p>
+                                    </div>
+                                    <div class="display-right">
+                                        <i class="fas fa-laptop-house icon i-2" style="color: white;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -627,6 +662,167 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
             history.pushState(null, null, '#project-scroll');
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const referenceSection = document.querySelector('#reference-section');
+    const refere = document.querySelector('.ref');
+    const header = document.querySelector('header'); 
+
+    refere.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        setTimeout(function() {
+            referenceSection.innerHTML = `
+                <div class="container custom-container4">
+                    <h3 id="start">&lt;</h3>
+                    <div class="reference-1">
+                        <a href="www.linkedin.com/in/lohitacp">
+                        <img src="Photos/linkedin.jpg" class="img-fluid linked" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <div class="reference-2">
+                        <a href="https://leetcode.com/u/lohita26/">
+                        <img src="Photos/leetcode.jpg" class="img-fluid leet" alt="Leetcode">
+                        </a>
+                    </div>
+                    <div class="reference-3">
+                        <a href="https://github.com/Lohi26">
+                        <img src="Photos/github.webp" class="img-fluid git" alt="GitHub">
+                        </a>
+                    </div>
+                    <div class="reference-4">
+                        <a href="https://www.codechef.com/users/kce717821p231">
+                        <img src="Photos/codechef.png" class="img-fluid code" alt="CodeChef">
+                        </a>
+                    </div>
+                    <div class="reference-5">
+                        <a href="https://my-resume-five-sand.vercel.app/">
+                        <img src="Photos/resume.jpg" alt="Resume" class="img-fluid resume">
+                        </a>
+                    </div>
+                    <h3 id="end">&gt;</h3>
+                </div>
+            `;
+            referenceSection.classList.add('loaded');
+            const rect = referenceSection.getBoundingClientRect();
+            const offset = rect.top + window.scrollY - header.offsetHeight;
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+            history.pushState(null, null, '#education-section');
+        }, 100); 
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const start = document.querySelector('.begin');
+    const end = document.querySelector('.end');
+    const ref3 = document.querySelector('.reference-3');
+    let showingLinkedIn = false;
+    let showingGithub = false;
+    let showingLeetcode = false;
+    let showingCodechef = false;
+    let showingResume = false;
+
+    start.addEventListener('click', function() {
+        if (showingGithub) {
+            if(showingLeetcode==false)
+            {
+                ref3.innerHTML = `
+                <a href="https://leetcode.com/u/lohita26/">
+                    <img src="Photos/leetcode.jpg" class="img-fluid leet leetcode" alt="Leetcode">
+                </a>`;
+                ref3.querySelector('.leetcode').style.display = 'block';
+                showingGithub = false;
+                showingLeetcode = true;
+            }
+            else
+            {
+                ref3.innerHTML = `
+                <a href="https://www.codechef.com/users/kce717821p231">
+                    <img src="Photos/codechef.png" class="img-fluid code codechef" alt="CodeChef">
+                </a>`;
+                ref3.querySelector('.codechef').style.display = 'block';
+                showingGithub = false;
+                showingCodechef = true;
+            }
+        } else if (showingCodechef) {
+            ref3.innerHTML = `
+            <a href="https://github.com/Lohi26">
+                <img src="Photos/github.webp" class="img-fluid git github" alt="GitHub">
+            </a>`;
+            ref3.querySelector('.github').style.display = 'block';
+            showingCodechef = false;
+            showingGithub = true;
+        } else if (showingLeetcode) {
+            ref3.innerHTML = `
+                <a href="https://www.linkedin.com/in/lohitacp">
+                    <img src="Photos/linkedin.jpg" class="img-fluid linked linkedin" alt="LinkedIn">
+                </a>`;
+            ref3.querySelector('.linkedin').style.display = 'block';
+            showingLeetcode = false;
+            showingLinkedIn = true;
+        }
+        else if(showingResume){
+            ref3.innerHTML = `
+                <a href="https://www.codechef.com/users/kce717821p231">
+                    <img src="Photos/codechef.png" class="img-fluid code codechef" alt="CodeChef">
+                </a>`;
+            ref3.querySelector('.codechef').style.display = 'block';
+            showingResume=false;
+            showingCodechef=true;
+        } 
+        else {
+            ref3.innerHTML = `
+                <a href="https://leetcode.com/u/lohita26/">
+                    <img src="Photos/leetcode.jpg" class="img-fluid leet leetcode" alt="Leetcode">
+                </a>`;
+            ref3.querySelector('.leetcode').style.display = 'block';
+            showingLinkedIn = false;
+            showingLeetcode = true;
+        }
+    });
+
+    end.addEventListener('click', function() {
+        if (showingResume) {
+            console.log("Hello");
+        } else if (showingCodechef) {
+            ref3.innerHTML = `
+                <a href="https://my-resume-five-sand.vercel.app/">
+                    <img src="Photos/resume.jpg" alt="Resume" class="img-fluid resume">
+                </a>`;
+            ref3.querySelector('.resume').style.display = 'block';
+            showingCodechef = false;
+            showingResume = true;
+        } else if (showingLinkedIn) {
+            ref3.innerHTML = `
+                <a href="https://leetcode.com/u/lohita26/">
+                    <img src="Photos/leetcode.jpg" class="img-fluid leet leetcode" alt="Leetcode">
+                </a>`;
+            ref3.querySelector('.leetcode').style.display = 'block';
+            showingLinkedIn = false;
+            showingLeetcode = true;
+        }
+        else if(showingGithub)
+        {
+            ref3.innerHTML = `
+            <a href="https://www.codechef.com/users/kce717821p231">
+                <img src="Photos/codechef.png" class="img-fluid code codechef" alt="CodeChef">
+            </a>`;
+            ref3.querySelector('.codechef').style.display = 'block';
+            showingGithub = false;
+            showingCodechef = true;
+        } 
+        else {
+            ref3.innerHTML = `
+                <a href="https://github.com/Lohi26">
+                    <img src="Photos/github.webp" class="img-fluid git github" alt="GitHub">
+                </a>`;
+            ref3.querySelector('.github').style.display = 'block';
+            showingLeetcode = false;
+            showingGithub = true;
         }
     });
 });
